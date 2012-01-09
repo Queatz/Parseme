@@ -3,7 +3,7 @@
 This line begins a section.\n
 \n
 /*$ {expression} $*/\n
-This line begins a gereated section.  The result of expression is iterated, or if it's not iterable (should always be an integer in this case) it is wrapped in range(), and the current iteration can be accessed as the capital variable I.\n
+This line begins a generated section.  The result of expression is iterated, or if it's not iterable (should always be an integer in this case) it is wrapped in range(), and the current iteration can be accessed as the capital variable I.\n
 \n
 /*$ $*/\n
 This line closes a section.\n
