@@ -1,5 +1,5 @@
 Parseme
-------
+======
 
 Use Python to expand/configure files.
 
@@ -21,7 +21,7 @@ In the Code
 ----------
 
 	/*$ SECTION $*/
-This line begins a section.
+This line begins a section called SECTION.
 
 	/*$ {expression} $*/
 This line begins a generated section.  The result of `expression` is iterated, or if it's not iterable (should always be an integer in this case) it is wrapped in range(), and the current iteration can be accessed as the capital variable `I`.
