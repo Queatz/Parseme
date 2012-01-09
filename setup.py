@@ -7,6 +7,6 @@ setup(name='parseme',
       description='parseme',
       author='JacobF',
       author_email='queatz@gmail.com',
-      url='http://glm.g-truc.net/',
+      url='http://www.queatz.com/',
       py_modules=['parseme']
 )
