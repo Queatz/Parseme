@@ -74,13 +74,12 @@ class Section:
 		out = ''
 		ifs = []
 		section = None
-		for r in self.rounds:
+		for ri, r in enumerate(self.rounds):
+			vars = dict(r.vars)
 			if inVars:
-				vars = dict(r.vars)
 				for a in inVars:
 					vars[a] = inVars[a]
-			else:
-				vars = r.vars
+			vars['I'] = ri
 			
 			ifs = []
 			section = None
