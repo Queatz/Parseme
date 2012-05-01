@@ -79,7 +79,8 @@ class Section:
 			if inVars:
 				for a in inVars:
 					vars[a] = inVars[a]
-			vars['I'] = ri
+			
+			vars['II'] = ri
 			
 			ifs = []
 			section = None
@@ -158,7 +159,7 @@ class Section:
 							if section is None:
 								file.err('Warning', 'Unmatched section end found.', fileName, linenumber + 1)
 							elif section is True:
-									out += Section(None, *(Round({'I': ri}) for ri in sectionGenerator)).parseLines(file, sectionLines, fileName, lineNumberStartsAt + sectionLinesOffset, vars)
+								out += Section(None, *(Round({'I': ri}) for ri in sectionGenerator)).parseLines(file, sectionLines, fileName, lineNumberStartsAt + sectionLinesOffset, vars)
 							elif section in file.sections:
 								out += file.sections[section].parseLines(file, sectionLines, fileName, lineNumberStartsAt + sectionLinesOffset, vars)
 							section = None
